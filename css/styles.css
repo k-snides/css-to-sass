@@ -25,9 +25,7 @@ h3 {
   margin: 1em 0;
   color: gray; }
 
-h2,
-h3,
-p {
+h2, h3, p {
   text-align: center; }
 
 p {
@@ -52,8 +50,7 @@ img {
 header {
   padding: 1em 0; }
 
-.main-header,
-.nav {
+.main-header, .nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -81,12 +78,6 @@ a {
 /* --- PROFILE Section --- */
 .profile {
   padding-bottom: 3em; }
-
-.hide-heading {
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
-  position: absolute; }
 
 .profile-image {
   padding: 1.5em 2em;
@@ -117,9 +108,7 @@ a {
   background-color: #4285f4;
   padding: 1em 0 3em 0; }
 
-.skills,
-.skills h3,
-.skills p {
+.skills, .skills h3, .skills p {
   color: #fff; }
 
 .skills .flex {
@@ -167,7 +156,7 @@ footer div {
 ----- Tablet devices (tablets, 768px and up) -----
 =================================================== */
 @media screen and (min-width: 768px) {
-  /* ----- BASE STYLES ----- */
+  /* ----- GENERAL STYLES ----- */
   p {
     font-size: 1em; }
 
