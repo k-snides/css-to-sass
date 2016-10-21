@@ -2,202 +2,27 @@
 ----- Mobile First -----
 =================================================== */
 
-/* ----- GENERAL STYLES ----- */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
-body {
-	font-family: 'Open Sans', sans-serif;
-	background-color: rgb(245, 245, 245);
-}
 
-h1 {
-	padding: 0.5em 0 1em;
-	font-size: 1.5em;
-}
 
-h2 {
-	text-transform: uppercase;
-	padding: 2.5em 0;
-	font-size: 1.1em;
-}
 
-h3 {
-	font-size: 1.250em;
-	margin: 1em 0;
-	color: gray;
-}
 
-h2,
-h3,
-p {
-	text-align: center;
-}
 
-p {
-	color: gray;
-	font-size: 0.9em;
-}
 
-/* --- Images --- */
-img {
-	max-width: 100%;
-}
 
-/* --- Wrappers --- */
-.wrapper {
-	width: 90%;
-	margin: 0 auto;
-}
 
-/* --- Flexbox --- */
-.flex {
-	display: -ms-flexbox;
-	display: flex;
-}
 
-/* ----- HEADER ----- */
-header {
-	padding: 1em 0;
-}
 
-.main-header,
-.nav {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	    flex-direction: column;
-}
 
-.header-logo {
-	-ms-flex-item-align: center;
-	    align-self: center;
-	text-transform: capitalize;
-}
 
-/* ----- NAVIGATION ----- */
-.main-nav ul li {
-	list-style-type: none;
-	background-color: #fff;
-	margin-bottom: 0.5em;
-	padding: 1em 0;
-	text-align: center;
-}
 
-a {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #000;
-	font-weight: bold;
-}
 
-/* --- PROFILE Section --- */
-.profile {
-	padding-bottom: 3em;
-}
 
-.hide-heading {
-	text-indent: 200%;
-	white-space: nowrap;
-	overflow: hidden;
-	position: absolute;
-}
 
-.profile-image {
-	padding: 1.5em 2em;
-	margin: 0 auto;
-	display: block;
-}
 
-.profile-content {
-	-ms-flex-direction: column;
-	    flex-direction: column;
-}
 
-.profile p {
-	padding: 0 0.5em;
-}
 
-/* --- PORTFOLIO Section --- */
-.portfolio {
-	background-color: #fff;
-	padding-bottom: 3em;
-}
 
-.portfolio .flex {
-	-ms-flex-direction: column;
-	    flex-direction: column;
-}
-
-.portfolio p {
-	margin: 1em 0 3em 0;
-}
-
-/* --- SKILLS Section --- */
-.skills {
-	background-color: rgba(66, 133, 244, 1);
-	padding: 1em 0 3em 0;	
-}
-
-.skills,
-.skills h3,
-.skills p {
-	color: #fff;
-}
-
-.skills .flex {
-	-ms-flex-direction: column;
-	    flex-direction: column;
-}
-
-.skills p {
-	margin: 1em 0 3em 0;
-}
-
-/* --- CONTACT Section --- */
-.contact {
-	background-color: rgb(240, 240, 240);
-	padding: 1em 0 4em 0;
-}
-
-.contact p {
-	margin-bottom: 1em;
-}
-
-span {
-	font-weight: bold;
-	padding-left: 10px;
-}
-
-/* --- FOOTER Section --- */
-footer {
-	border-top: 1px solid lightgray;
-	margin: 0 auto;
-	width: 90%;
-}
-
-footer h4 {
-	padding: 2em 0;
-	margin-right: auto;
-	font-size: 1em;
-}
-
-.footer-logo {
-	margin-right: auto;
-}
-
-footer div {
-	-ms-flex-item-align: center;
-	font-size: 0.8em;
-	align-self: center;
-}
-
-.mobile-hide {
-	display: none;
-}
 
 
 /* ===================================================

@@ -1,0 +1,20 @@
+/* --- SKILLS Section --- */
+.skills {
+	background-color: rgba(66, 133, 244, 1);
+	padding: 1em 0 3em 0;	
+}
+
+.skills,
+.skills h3,
+.skills p {
+	color: #fff;
+}
+
+.skills .flex {
+	-ms-flex-direction: column;
+	    flex-direction: column;
+}
+
+.skills p {
+	margin: 1em 0 3em 0;
+}

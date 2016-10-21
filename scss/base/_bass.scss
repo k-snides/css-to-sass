@@ -1,0 +1,39 @@
+/* ----- BASE STYLES ----- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: rgb(245, 245, 245);
+}
+
+h1 {
+	padding: 0.5em 0 1em;
+	font-size: 1.5em;
+}
+
+h2 {
+	text-transform: uppercase;
+	padding: 2.5em 0;
+	font-size: 1.1em;
+}
+
+h3 {
+	font-size: 1.250em;
+	margin: 1em 0;
+	color: gray;
+}
+
+h2,
+h3,
+p {
+	text-align: center;
+}
+
+p {
+	color: gray;
+	font-size: 0.9em;
+}

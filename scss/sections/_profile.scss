@@ -1,0 +1,26 @@
+/* --- PROFILE Section --- */
+.profile {
+	padding-bottom: 3em;
+}
+
+.hide-heading {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+}
+
+.profile-image {
+	padding: 1.5em 2em;
+	margin: 0 auto;
+	display: block;
+}
+
+.profile-content {
+	-ms-flex-direction: column;
+	    flex-direction: column;
+}
+
+.profile p {
+	padding: 0 0.5em;
+}
