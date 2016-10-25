@@ -1,12 +1,42 @@
 /* --- PROFILE Section --- */
+.profile {
+	padding-bottom: 3em;
+	
+	@include mq('medium') {
+		margin-top: 1em;
+	}
+
+	p {
+		padding: 0 0.5em;
+	}
+}
+
 .profile-content {
 	@extend %flexbox;
 	@extend %flexbox-column;
+	
+	@include mq('medium') {
+		@include flexbox-row;
+		
+		p {
+			-ms-flex: 1 0 60%;
+			    flex: 1 0 60%;
+			-ms-flex-order: 1;
+			    order: 1;
+			text-align: left;
+			font-size: 1.250em;
+			padding-right: 1em;
+		}
+
+		figure {
+			-ms-flex: 1 0 40%;
+			    flex: 1 0 40%;
+			-ms-flex-order: 2;
+			    order: 2;
+		}
+	}	
 }
 
-.profile {
-	padding-bottom: 3em;
-}
 
 .hide-heading {
 	text-indent: 200%;
@@ -19,9 +49,13 @@
 	padding: 1.5em 2em;
 	margin: 0 auto;
 	display: block;
+	
+	@include mq('medium') {
+		padding: 0;
+	}
 }
 
 
-.profile p {
-	padding: 0 0.5em;
-}
+// .profile p {
+// 	padding: 0 0.5em;
+// }

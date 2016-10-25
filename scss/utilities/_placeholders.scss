@@ -8,3 +8,11 @@
 	-ms-flex-direction: column;
 	    flex-direction: column;
 }
+
+%flexbox-row {
+	@include flexbox-row;
+}
+
+%flexbox-space-around {
+	@include flexbox-space-around;
+}

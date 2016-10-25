@@ -3,12 +3,19 @@ header {
 	padding: 1em 0;
 }
 
-.main-header,
+.main-header {
+	@extend %flexbox;
+	@extend %flexbox-column;
+}
+
 .nav {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	    flex-direction: column;
+	@extend %flexbox;
+	@extend %flexbox-column;
+	
+	@include mq('medium') {
+		@include flexbox-row;
+		@include flexbox-space-around;
+	}
 }
 
 .header-logo {
@@ -18,17 +25,16 @@ header {
 }
 
 /* ----- NAVIGATION ----- */
-.main-nav ul li {
-	list-style-type: none;
-	background-color: #fff;
-	margin-bottom: 0.5em;
-	padding: 1em 0;
-	text-align: center;
-}
-
-a {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #000;
-	font-weight: bold;
+.nav {
+	li {
+		list-style-type: none;
+		background-color: #fff;
+		margin-bottom: 0.5em;
+		padding: 1em 0;
+		text-align: center;
+		
+		@include mq('medium') {
+			background-color: inherit;
+		}
+	}
 }

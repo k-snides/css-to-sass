@@ -16,3 +16,14 @@
 		@error "No value could be retreived for '#{$breakpoint}'.";
 	}
 }
+
+// Flexbox (Flexbox mixins needed for media queries)
+@mixin flexbox-row {
+	-ms-flex-direction: row;
+	    flex-direction: row;
+}
+
+@mixin flexbox-space-around {
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}

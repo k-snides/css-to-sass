@@ -5,11 +5,11 @@
 ----- Utilities Imports -----
 =================================================== */
 /* --- Flexbox --- */
-footer div, .profile-content, .portfolio div, .skills div {
+.main-header, .nav, footer div, .profile-content, .portfolio div, .skills div {
   display: -ms-flexbox;
   display: flex; }
 
-.profile-content, .portfolio div, .skills div {
+.main-header, .nav, .profile-content, .portfolio div, .skills div {
   -ms-flex-direction: column;
   flex-direction: column; }
 
@@ -52,6 +52,12 @@ p {
     p {
       font-size: 1em; } }
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold; }
+
 /* ===================================================
 ----- Components Imports -----
 =================================================== */
@@ -66,12 +72,12 @@ img {
 header {
   padding: 1em 0; }
 
-.main-header,
-.nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+@media (min-width: 768px) {
+  .nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; } }
 
 .header-logo {
   -ms-flex-item-align: center;
@@ -79,18 +85,15 @@ header {
   text-transform: capitalize; }
 
 /* ----- NAVIGATION ----- */
-.main-nav ul li {
+.nav li {
   list-style-type: none;
   background-color: #fff;
   margin-bottom: 0.5em;
   padding: 1em 0;
   text-align: center; }
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  font-weight: bold; }
+  @media (min-width: 768px) {
+    .nav li {
+      background-color: inherit; } }
 
 /* --- Wrappers --- */
 .wrapper {
@@ -123,6 +126,29 @@ footer {
 /* --- PROFILE Section --- */
 .profile {
   padding-bottom: 3em; }
+  @media (min-width: 768px) {
+    .profile {
+      margin-top: 1em; } }
+  .profile p {
+    padding: 0 0.5em; }
+
+@media (min-width: 768px) {
+  .profile-content {
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .profile-content p {
+      -ms-flex: 1 0 60%;
+      flex: 1 0 60%;
+      -ms-flex-order: 1;
+      order: 1;
+      text-align: left;
+      font-size: 1.250em;
+      padding-right: 1em; }
+    .profile-content figure {
+      -ms-flex: 1 0 40%;
+      flex: 1 0 40%;
+      -ms-flex-order: 2;
+      order: 2; } }
 
 .hide-heading {
   text-indent: 200%;
@@ -134,9 +160,9 @@ footer {
   padding: 1.5em 2em;
   margin: 0 auto;
   display: block; }
-
-.profile p {
-  padding: 0 0.5em; }
+  @media (min-width: 768px) {
+    .profile-image {
+      padding: 0; } }
 
 /* --- PORTFOLIO Section --- */
 .portfolio {
