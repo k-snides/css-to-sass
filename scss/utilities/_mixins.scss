@@ -27,3 +27,8 @@
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
 }
+
+@mixin flexbox-wrap {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}

@@ -37,7 +37,7 @@ h2 {
 
 h3 {
   font-size: 1.250em;
-  margin: 1em 0;
+  margin: 1em auto;
   color: gray; }
 
 h2,
@@ -126,11 +126,11 @@ footer {
 /* --- PROFILE Section --- */
 .profile {
   padding-bottom: 3em; }
+  .profile p {
+    padding: 0 0.5em; }
   @media (min-width: 768px) {
     .profile {
       margin-top: 1em; } }
-  .profile p {
-    padding: 0 0.5em; }
 
 @media (min-width: 768px) {
   .profile-content {
@@ -150,12 +150,6 @@ footer {
       -ms-flex-order: 2;
       order: 2; } }
 
-.hide-heading {
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
-  position: absolute; }
-
 .profile-image {
   padding: 1.5em 2em;
   margin: 0 auto;
@@ -170,6 +164,21 @@ footer {
   padding-bottom: 3em; }
   .portfolio p {
     margin: 1em 0 3em 0; }
+  @media (min-width: 768px) {
+    .portfolio {
+      padding: 1em 0 1em 0; }
+      .portfolio div {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+      .portfolio .portfolio-image {
+        -ms-flex: 1 0 40%;
+        flex: 1 0 40%;
+        margin: 0.5em; }
+      .portfolio p {
+        margin: 1em 0 3em 0;
+        padding: 0 1em; } }
 
 /* --- SKILLS Section --- */
 .skills {

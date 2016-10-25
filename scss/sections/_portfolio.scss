@@ -9,4 +9,26 @@
 	p {
 		margin: 1em 0 3em 0; 
 	}
+
+	@include mq('medium') {
+		padding: 1em 0 1em 0;
+		
+		div {
+			@include flexbox-row;
+			@include flexbox-wrap;
+		}
+
+		.portfolio-image {
+			-ms-flex: 1 0 40%;
+			    flex: 1 0 40%;
+			margin: 0.5em;
+		}
+
+		p {
+			margin: 1em 0 3em 0;
+			padding: 0 1em;
+		}
+
+	}
+
 }

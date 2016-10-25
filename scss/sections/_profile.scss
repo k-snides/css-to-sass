@@ -2,13 +2,14 @@
 .profile {
 	padding-bottom: 3em;
 	
+	p {
+		padding: 0 0.5em;
+	}
+	
 	@include mq('medium') {
 		margin-top: 1em;
 	}
 
-	p {
-		padding: 0 0.5em;
-	}
 }
 
 .profile-content {
@@ -38,12 +39,12 @@
 }
 
 
-.hide-heading {
-	text-indent: 200%;
-	white-space: nowrap;
-	overflow: hidden;
-	position: absolute;
-}
+// .hide-heading {
+// 	text-indent: 200%;
+// 	white-space: nowrap;
+// 	overflow: hidden;
+// 	position: absolute;
+// }
 
 .profile-image {
 	padding: 1.5em 2em;
@@ -54,8 +55,3 @@
 		padding: 0;
 	}
 }
-
-
-// .profile p {
-// 	padding: 0 0.5em;
-// }
