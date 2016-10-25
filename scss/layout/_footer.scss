@@ -3,22 +3,21 @@ footer {
 	border-top: 1px solid lightgray;
 	margin: 0 auto;
 	width: 90%;
-}
-
-footer h4 {
-	padding: 2em 0;
-	margin-right: auto;
-	font-size: 1em;
+	div {
+		@extend %flexbox;
+		-ms-flex-item-align: center;
+		font-size: 0.8em;
+		align-self: center;
+	}
+	h4 {
+		padding: 2em 0;
+		margin-right: auto;
+		font-size: 1em;
+	}
 }
 
 .footer-logo {
 	margin-right: auto;
-}
-
-footer div {
-	-ms-flex-item-align: center;
-	font-size: 0.8em;
-	align-self: center;
 }
 
 .mobile-hide {

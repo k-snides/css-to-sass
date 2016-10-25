@@ -1,4 +1,9 @@
 /* --- PROFILE Section --- */
+.profile-content {
+	@extend %flexbox;
+	@extend %flexbox-column;
+}
+
 .profile {
 	padding-bottom: 3em;
 }
@@ -16,10 +21,6 @@
 	display: block;
 }
 
-.profile-content {
-	-ms-flex-direction: column;
-	    flex-direction: column;
-}
 
 .profile p {
 	padding: 0 0.5em;

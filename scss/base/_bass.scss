@@ -36,4 +36,12 @@ p {
 p {
 	color: gray;
 	font-size: 0.9em;
+	
+	@include mq('medium') {
+		font-size: 1em; 
+	}
 }
+
+
+
+

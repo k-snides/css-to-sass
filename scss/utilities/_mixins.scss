@@ -1,0 +1,18 @@
+// Media Queries
+@mixin mq($breakpoint) {
+	@if $breakpoint == "medium" {
+		@media (min-width: $breakpoint-medium) {
+			@content;
+		}
+	}
+
+	@else if $breakpoint == "large" {
+		@media (min-width: $breakpoint-large) {
+			@content;
+		}
+	}
+
+	@else {
+		@error "No value could be retreived for '#{$breakpoint}'.";
+	}
+}

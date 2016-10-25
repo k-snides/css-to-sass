@@ -1,0 +1,10 @@
+/* --- Flexbox --- */
+%flexbox {
+	display: -ms-flexbox;
+	display: flex;
+}
+
+%flexbox-column {
+	-ms-flex-direction: column;
+	    flex-direction: column;
+}

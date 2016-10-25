@@ -2,6 +2,18 @@
 ----- Global Imports -----
 =================================================== */
 /* ===================================================
+----- Utilities Imports -----
+=================================================== */
+/* --- Flexbox --- */
+footer div, .profile-content, .portfolio div, .skills div {
+  display: -ms-flexbox;
+  display: flex; }
+
+.profile-content, .portfolio div, .skills div {
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+/* ===================================================
 ----- Base Imports -----
 =================================================== */
 /* ----- BASE STYLES ----- */
@@ -36,6 +48,9 @@ p {
 p {
   color: gray;
   font-size: 0.9em; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1em; } }
 
 /* ===================================================
 ----- Components Imports -----
@@ -82,29 +97,22 @@ a {
   width: 90%;
   margin: 0 auto; }
 
-/* --- Flexbox --- */
-.flex {
-  display: -ms-flexbox;
-  display: flex; }
-
 /* ----- FOOTER ----- */
 footer {
   border-top: 1px solid lightgray;
   margin: 0 auto;
   width: 90%; }
-
-footer h4 {
-  padding: 2em 0;
-  margin-right: auto;
-  font-size: 1em; }
+  footer div {
+    -ms-flex-item-align: center;
+    font-size: 0.8em;
+    align-self: center; }
+  footer h4 {
+    padding: 2em 0;
+    margin-right: auto;
+    font-size: 1em; }
 
 .footer-logo {
   margin-right: auto; }
-
-footer div {
-  -ms-flex-item-align: center;
-  font-size: 0.8em;
-  align-self: center; }
 
 .mobile-hide {
   display: none; }
@@ -127,10 +135,6 @@ footer div {
   margin: 0 auto;
   display: block; }
 
-.profile-content {
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
 .profile p {
   padding: 0 0.5em; }
 
@@ -138,30 +142,18 @@ footer div {
 .portfolio {
   background-color: #fff;
   padding-bottom: 3em; }
-
-.portfolio .flex {
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
-.portfolio p {
-  margin: 1em 0 3em 0; }
+  .portfolio p {
+    margin: 1em 0 3em 0; }
 
 /* --- SKILLS Section --- */
 .skills {
   background-color: #4285f4;
   padding: 1em 0 3em 0; }
-
-.skills,
-.skills h3,
-.skills p {
-  color: #fff; }
-
-.skills .flex {
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
-.skills p {
-  margin: 1em 0 3em 0; }
+  .skills h3 {
+    color: #fff; }
+  .skills p {
+    margin: 1em 0 3em 0;
+    color: #fff; }
 
 /* --- CONTACT Section --- */
 .contact {
