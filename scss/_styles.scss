@@ -33,70 +33,10 @@
 	
 
 
-	/* --- PORTFOLIO Section --- */
-	// .portfolio {
-	// 	padding: 1em 0 1em 0;
-	// }
+	
 
-	.portfolio .flex {
-		-ms-flex-direction: row;
-		    flex-direction: row;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
-	}
 
-	.portfolio-image {
-		-ms-flex: 1 0 40%;
-		    flex: 1 0 40%;
-		margin: 0.5em;
-	}
-
-	.portfolio p {
-		margin: 1em 0 3em 0;
-		padding: 0 1em;
-	}
-
-	/* --- SKILLS Section --- */
-	.skills {
-		padding: 1em 0 2em 0;	
-	}
-
-	.skills .flex {
-		-ms-flex-direction: row;
-		    flex-direction: row;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;	
-	}
-
-	.skills-image {
-		-ms-flex: 1 0 40%;
-		    flex: 1 0 40%;
-		margin: 0.5em;
-	}
-
-	.skills p {
-		margin: 1em 0 3em 0;
-		padding: 0 1em;
-	}
-
-	.skills-image:last-child {
-		-ms-flex: 0 1 48%;
-		    flex: 0 1 48%;
-		margin: 0 0.5em 0 0.5em;
-	}
-
-	/* --- CONTACT Section --- */
-	.contact {
-		padding: 0 4.5em 4em 4.5em;
-	}
-
-	.contact p {
-		font-size: 1.250em;
-	}
-
-	.contact p:nth-child(3) {
-		margin-top: 3em;
-	}
+	
 
 	/* --- FOOTER Section --- */
 	.desktop-hide {

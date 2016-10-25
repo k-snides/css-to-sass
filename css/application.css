@@ -189,17 +189,41 @@ footer {
   .skills p {
     margin: 1em 0 3em 0;
     color: #fff; }
+  @media (min-width: 768px) {
+    .skills {
+      padding: 1em 0 2em 0; }
+      .skills div {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+      .skills .skills-image {
+        -ms-flex: 1 0 40%;
+        flex: 1 0 40%;
+        margin: 0.5em; }
+        .skills .skills-image:last-child {
+          -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+          margin: 0 0.5em 0 0.5em; }
+      .skills p {
+        margin: 1em 0 3em 0;
+        padding: 0 1em; } }
 
 /* --- CONTACT Section --- */
 .contact {
   background-color: #f0f0f0;
   padding: 1em 0 4em 0; }
-
-.contact p {
-  margin-bottom: 1em; }
-
-span {
-  font-weight: bold;
-  padding-left: 10px; }
+  .contact p {
+    margin-bottom: 1em; }
+    .contact p span {
+      font-weight: bold;
+      padding-left: 10px; }
+  @media (min-width: 768px) {
+    .contact {
+      padding: 0 4.5em 4em 4.5em; }
+      .contact p {
+        font-size: 1.250em; }
+        .contact p:nth-child(3) {
+          margin-top: 3em; } }
 
 /*# sourceMappingURL=application.css.map */

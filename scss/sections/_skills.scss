@@ -13,4 +13,29 @@
 		margin: 1em 0 3em 0;
 		color: $color-text-base; 
 	}
+
+	@include mq('medium') {
+		padding: 1em 0 2em 0;
+		
+		div {
+			@include flexbox-row;
+			@include flexbox-wrap;
+		}
+
+		.skills-image {
+			-ms-flex: 1 0 40%;
+			    flex: 1 0 40%;
+			margin: 0.5em;
+			&:last-child {
+				-ms-flex: 0 1 48%;
+				    flex: 0 1 48%;
+				margin: 0 0.5em 0 0.5em;
+			}
+		}
+
+		p {
+			margin: 1em 0 3em 0;
+			padding: 0 1em;
+		}
+	}
 }

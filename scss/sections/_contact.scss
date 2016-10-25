@@ -2,13 +2,22 @@
 .contact {
 	background-color: rgb(240, 240, 240);
 	padding: 1em 0 4em 0;
-}
+	p {
+		margin-bottom: 1em;
+		span {
+			font-weight: bold;
+			padding-left: 10px;
+		}
+	}
 
-.contact p {
-	margin-bottom: 1em;
-}
-
-span {
-	font-weight: bold;
-	padding-left: 10px;
+	@include mq('medium') {
+		padding: 0 4.5em 4em 4.5em;
+		
+		p {
+			font-size: 1.250em;
+			&:nth-child(3) {
+				margin-top: 3em;
+			}
+		}
+	}
 }
