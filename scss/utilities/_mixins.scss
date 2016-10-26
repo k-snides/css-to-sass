@@ -18,6 +18,11 @@
 }
 
 // Flexbox (Flexbox mixins needed for media queries)
+@mixin display-flexbox {
+	display: -ms-flexbox;
+	display: flex;
+}
+
 @mixin flexbox-row {
 	-ms-flex-direction: row;
 	    flex-direction: row;

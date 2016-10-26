@@ -8,15 +8,27 @@ header {
 	@extend %flexbox-column;
 }
 
-.nav {
-	@extend %flexbox;
-	@extend %flexbox-column;
-	
-	@include mq('medium') {
-		@include flexbox-row;
-		@include flexbox-space-around;
+.main-nav {
+	.nav {
+		@extend %flexbox;
+		@extend %flexbox-column;
+		
+		@include mq('medium') {
+			@include flexbox-row;
+			@include flexbox-space-around;
+		}
 	}
 }
+
+// .nav {
+// 	@extend %flexbox;
+// 	@extend %flexbox-column;
+	
+// 	@include mq('medium') {
+// 		@include flexbox-row;
+// 		@include flexbox-space-around;
+// 	}
+
 
 .header-logo {
 	-ms-flex-item-align: center;

@@ -5,13 +5,16 @@
 ----- Utilities Imports -----
 =================================================== */
 /* --- Flexbox --- */
-.main-header, .nav, footer div, .profile-content, .portfolio div, .skills div {
+.main-header, .main-nav .nav, footer div, .profile-content, .portfolio div, .skills div {
   display: -ms-flexbox;
   display: flex; }
 
-.main-header, .nav, .profile-content, .portfolio div, .skills div {
+.main-header, .main-nav .nav, .profile-content, .portfolio div, .skills div {
   -ms-flex-direction: column;
   flex-direction: column; }
+
+footer .footer-nav {
+  display: none; }
 
 /* ===================================================
 ----- Base Imports -----
@@ -73,7 +76,7 @@ header {
   padding: 1em 0; }
 
 @media (min-width: 768px) {
-  .nav {
+  .main-nav .nav {
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: distribute;
@@ -107,18 +110,38 @@ footer {
   width: 90%; }
   footer div {
     -ms-flex-item-align: center;
-    font-size: 0.8em;
-    align-self: center; }
+    align-self: center;
+    font-size: 0.8em; }
   footer h4 {
     padding: 2em 0;
     margin-right: auto;
     font-size: 1em; }
-
-.footer-logo {
-  margin-right: auto; }
-
-.mobile-hide {
-  display: none; }
+  footer .footer-logo {
+    margin-right: auto; }
+  @media (min-width: 768px) {
+    footer .desktop-hide {
+      display: none; }
+    footer .footer-nav {
+      display: -ms-flexbox;
+      display: flex; }
+      footer .footer-nav .nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin: 1.5em 0; }
+        footer .footer-nav .nav li {
+          list-style-type: none;
+          background-color: inherit;
+          margin: 0 0 0.5em 1em;
+          text-align: center;
+          font-size: 0.9em;
+          -ms-flex-item-align: center;
+          align-self: center; }
+    footer h4 {
+      font-size: 1.250em; } }
 
 /* ===================================================
 ----- Sections Imports -----
@@ -184,6 +207,8 @@ footer {
 .skills {
   background-color: #4285f4;
   padding: 1em 0 3em 0; }
+  .skills h2 {
+    color: #fff; }
   .skills h3 {
     color: #fff; }
   .skills p {

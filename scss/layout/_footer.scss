@@ -6,20 +6,56 @@ footer {
 	div {
 		@extend %flexbox;
 		-ms-flex-item-align: center;
-		font-size: 0.8em;
 		align-self: center;
+		font-size: 0.8em;
 	}
 	h4 {
 		padding: 2em 0;
 		margin-right: auto;
 		font-size: 1em;
 	}
+	.footer-nav {
+		@extend %hide-element;
+	}
+
+	.footer-logo {
+		margin-right: auto;
+	}
+
+	@include mq('medium') {
+		.desktop-hide {
+			display: none;
+		}
+
+		.footer-nav {
+			@include display-flexbox;
+			.nav {
+				@include display-flexbox;
+				@include flexbox-row;
+				@include flexbox-space-around;
+				margin: 1.5em 0;
+				li {
+					list-style-type: none;
+					background-color: inherit;
+					margin: 0 0 0.5em 1em; 
+					// padding: 1em 0;
+					text-align: center;
+					font-size: 0.9em;
+					-ms-flex-item-align: center;
+					    align-self: center;
+				}
+			}
+		}
+
+		h4 {
+			font-size: 1.250em;
+		}
+	}// <-- end medium mq
 }
 
-.footer-logo {
-	margin-right: auto;
-}
 
-.mobile-hide {
-	display: none;
-}
+
+
+// .mobile-hide {
+// 	display: none;
+// }

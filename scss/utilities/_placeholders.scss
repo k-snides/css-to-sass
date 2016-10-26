@@ -16,3 +16,8 @@
 %flexbox-space-around {
 	@include flexbox-space-around;
 }
+
+// Hide Elements
+%hide-element {
+	display: none;
+}

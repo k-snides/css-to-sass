@@ -6,6 +6,9 @@
 		@extend %flexbox;
 		@extend %flexbox-column;
 	}
+	h2 {
+		color: $color-text-base; 
+	}
 	h3 {
 		color: $color-text-base;
 	}
@@ -37,5 +40,5 @@
 			margin: 1em 0 3em 0;
 			padding: 0 1em;
 		}
-	}
+	}// <-- end of medium mq
 }
