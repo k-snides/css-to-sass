@@ -17,6 +17,7 @@
 		color: $color-text-base; 
 	}
 
+	// medium media query
 	@include mq('medium') {
 		padding: 1em 0 2em 0;
 		
@@ -41,4 +42,55 @@
 			padding: 0 1em;
 		}
 	}// <-- end of medium mq
+	
+	@include mq('large') {
+		margin: 0 2em;
+		
+		.skills-image {
+			-ms-flex: 1 0 30%;
+			    flex: 1 0 30%;
+			margin: 0.5em;
+			
+			transition: transform .3s ease-in,
+									box-shadow .3s ease-in;
+									
+			&:nth-child(3n + 1) {
+				margin-left: -1.5em;
+			}
+			&:nth-child(3n + 3) {
+				margin-right: -1.5em;
+			}
+			&:last-child {
+				-ms-flex: 1 0 30%;
+				    flex: 1 0 30%;
+				margin-top: 0.5em;
+			}
+			&:hover {
+				transform: scale(1.05) translate(-1%, -1%);
+				box-shadow: 0 12px 12px -6px black;
+			}
+		}
+
+		p {
+			padding: 0 0.5em;
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

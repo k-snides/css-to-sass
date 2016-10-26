@@ -72,36 +72,46 @@ img {
 ----- Layout Imports -----
 =================================================== */
 /* ----- HEADER ----- */
-header {
+.main-header {
   padding: 1em 0; }
-
-@media (min-width: 768px) {
-  .main-nav .nav {
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; } }
-
-.header-logo {
-  -ms-flex-item-align: center;
-  align-self: center;
-  text-transform: capitalize; }
+  .main-header .header-logo {
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-transform: capitalize; }
+  @media (min-width: 1024px) {
+    .main-header {
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin: 1.5em 0; }
+      .main-header .header-logo {
+        margin-right: auto; } }
 
 /* ----- NAVIGATION ----- */
-.nav li {
+.main-nav .nav li {
   list-style-type: none;
   background-color: #fff;
   margin-bottom: 0.5em;
   padding: 1em 0;
   text-align: center; }
-  @media (min-width: 768px) {
-    .nav li {
+@media (min-width: 768px) {
+  .main-nav .nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .main-nav .nav li {
       background-color: inherit; } }
+@media (min-width: 1024px) {
+  .main-nav .nav li {
+    margin: 0.5em 0 0 2em; } }
 
 /* --- Wrappers --- */
 .wrapper {
   width: 90%;
   margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .wrapper {
+      max-width: 1024px; } }
 
 /* ----- FOOTER ----- */
 footer {
@@ -149,11 +159,20 @@ footer {
 /* --- PROFILE Section --- */
 .profile {
   padding-bottom: 3em; }
-  .profile p {
-    padding: 0 0.5em; }
   @media (min-width: 768px) {
     .profile {
       margin-top: 1em; } }
+
+.profile-image {
+  padding: 1.5em 2em;
+  margin: 0 auto;
+  display: block; }
+  @media (min-width: 768px) {
+    .profile-image {
+      padding: 0; } }
+  @media (min-width: 1024px) {
+    .profile-image {
+      margin: 0 0 0 auto; } }
 
 @media (min-width: 768px) {
   .profile-content {
@@ -166,20 +185,15 @@ footer {
       order: 1;
       text-align: left;
       font-size: 1.250em;
-      padding-right: 1em; }
+      padding: 0 1em 0 0.5em; }
     .profile-content figure {
       -ms-flex: 1 0 40%;
       flex: 1 0 40%;
       -ms-flex-order: 2;
       order: 2; } }
-
-.profile-image {
-  padding: 1.5em 2em;
-  margin: 0 auto;
-  display: block; }
-  @media (min-width: 768px) {
-    .profile-image {
-      padding: 0; } }
+@media (min-width: 1024px) {
+  .profile-content p {
+    padding: 0 1.8em 0 0; } }
 
 /* --- PORTFOLIO Section --- */
 .portfolio {
@@ -202,6 +216,23 @@ footer {
       .portfolio p {
         margin: 1em 0 3em 0;
         padding: 0 1em; } }
+  @media (min-width: 1024px) {
+    .portfolio {
+      margin: 0 2em; }
+      .portfolio .portfolio-image {
+        -ms-flex: 1 0 30%;
+        flex: 1 0 30%;
+        margin: 0 0.5em 1em 0.5em;
+        transition: transform .3s ease-in, box-shadow .3s ease-in; }
+        .portfolio .portfolio-image:nth-child(3n + 1) {
+          margin-left: -1.5em; }
+        .portfolio .portfolio-image:nth-child(3n + 3) {
+          margin-right: -1.5em; }
+        .portfolio .portfolio-image:hover {
+          transform: scale(1.05) translate(-1%, -1%);
+          box-shadow: 0 12px 12px -6px black; }
+      .portfolio p {
+        padding: 0 0.5em; } }
 
 /* --- SKILLS Section --- */
 .skills {
@@ -233,6 +264,27 @@ footer {
       .skills p {
         margin: 1em 0 3em 0;
         padding: 0 1em; } }
+  @media (min-width: 1024px) {
+    .skills {
+      margin: 0 2em; }
+      .skills .skills-image {
+        -ms-flex: 1 0 30%;
+        flex: 1 0 30%;
+        margin: 0.5em;
+        transition: transform .3s ease-in, box-shadow .3s ease-in; }
+        .skills .skills-image:nth-child(3n + 1) {
+          margin-left: -1.5em; }
+        .skills .skills-image:nth-child(3n + 3) {
+          margin-right: -1.5em; }
+        .skills .skills-image:last-child {
+          -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+          margin-top: 0.5em; }
+        .skills .skills-image:hover {
+          transform: scale(1.05) translate(-1%, -1%);
+          box-shadow: 0 12px 12px -6px black; }
+      .skills p {
+        padding: 0 0.5em; } }
 
 /* --- CONTACT Section --- */
 .contact {

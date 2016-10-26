@@ -2,4 +2,8 @@
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
+	
+	@include mq('large') {
+		max-width: 1024px;
+	}
 }
