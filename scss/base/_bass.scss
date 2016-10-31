@@ -1,4 +1,4 @@
-/* ----- BASE STYLES ----- */
+// BASE Styles
 * {
 	margin: 0;
 	padding: 0;
@@ -6,46 +6,43 @@
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	background-color: rgb(245, 245, 245);
+	font-family: $font-primary; 
+	background-color: $color-background__body;
 }
 
 h1 {
 	padding: 0.5em 0 1em;
-	font-size: 1.5em;
+	font-size: $font-size__x-large;
 }
 
 h2 {
-	text-transform: uppercase;
+	@extend %center;
+	@extend %uppercase;
 	padding: 2.5em 0;
-	font-size: 1.1em;
+	font-size: $font-size__medium;
 }
 
 h3 {
-	font-size: 1.250em;
+	@extend %center;
+	font-size: $font-size__large;
 	margin: 1em auto;
-	color: gray;
-}
-
-h2,
-h3,
-p {
-	text-align: center;
+	color: $color-text__h3;
 }
 
 p {
-	color: gray;
-	font-size: 0.9em;
+	@extend %center;
+	color: $color-text__paragraph;
+	font-size: $font-size__small;
 	
 	@include mq('medium') {
-		font-size: 1em; 
+		font-size: $font-size__default; 
 	}
 }
 
 a {
+	@extend %uppercase;
 	text-decoration: none;
-	text-transform: uppercase;
-	color: #000;
+	color: $color-text__anchor-links;
 	font-weight: bold;
 }
 

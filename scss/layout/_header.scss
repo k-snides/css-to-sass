@@ -1,18 +1,16 @@
-/* ----- HEADER ----- */
+// HEADER
 .main-header {
 	@extend %flexbox;
 	@extend %flexbox-column;
 	padding: 1em 0;
 	
 	.header-logo {
-		-ms-flex-item-align: center;
-		    align-self: center;
+		@include flexbox-align-self;
 		text-transform: capitalize;
 	}
 
 	@include mq('large') {
-		-ms-flex-direction: row;
-		    flex-direction: row;
+		@include flexbox-row;
 		margin: 1.5em 0;
 		
 		.header-logo {
@@ -23,18 +21,18 @@
 
 
 
-/* ----- NAVIGATION ----- */
+// NAVIGATION
 .main-nav {
 	.nav {
 		@extend %flexbox;
 		@extend %flexbox-column;
 		
 		li {
+			@extend %center;
 			list-style-type: none;
-			background-color: #fff;
+			background-color: $color-background__li;
 			margin-bottom: 0.5em;
 			padding: 1em 0;
-			text-align: center;
 		}
 		
 		// medium media query

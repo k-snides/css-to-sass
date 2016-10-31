@@ -1,23 +1,23 @@
-/* --- SKILLS Section --- */
+// SKILLS Section
 .skills {
-	background-color: rgba(66, 133, 244, 1);
+	background-color: $color-background__skills;
 	padding: 1em 0 3em 0;
 	div {
 		@extend %flexbox;
 		@extend %flexbox-column;
 	}
 	h2 {
-		color: $color-text-base; 
+		@extend %white-text; 
 	}
 	h3 {
-		color: $color-text-base;
+		@extend %white-text;
 	}
 	p {
-		margin: 1em 0 3em 0;
-		color: $color-text-base; 
+		@extend %white-text;
+		margin: 1em 0 3em 0; 
 	}
 
-	// medium media query
+	// start medium media query
 	@include mq('medium') {
 		padding: 1em 0 2em 0;
 		
@@ -27,9 +27,7 @@
 		}
 
 		.skills-image {
-			-ms-flex: 1 0 40%;
-			    flex: 1 0 40%;
-			margin: 0.5em;
+			@include section-image-medium;
 			&:last-child {
 				-ms-flex: 0 1 48%;
 				    flex: 0 1 48%;
@@ -38,43 +36,27 @@
 		}
 
 		p {
-			margin: 1em 0 3em 0;
-			padding: 0 1em;
+			@include section-padding-medium;
 		}
-	}// <-- end of medium mq
+	} // end medium media query
 	
+	// start large media query
 	@include mq('large') {
 		margin: 0 2em;
 		
 		.skills-image {
-			-ms-flex: 1 0 30%;
-			    flex: 1 0 30%;
-			margin: 0.5em;
-			
-			transition: transform .3s ease-in,
-									box-shadow .3s ease-in;
-									
-			&:nth-child(3n + 1) {
-				margin-left: -1.5em;
-			}
-			&:nth-child(3n + 3) {
-				margin-right: -1.5em;
-			}
+			@include section-image-large;
 			&:last-child {
 				-ms-flex: 1 0 30%;
 				    flex: 1 0 30%;
 				margin-top: 0.5em;
 			}
-			&:hover {
-				transform: scale(1.05) translate(-1%, -1%);
-				box-shadow: 0 12px 12px -6px black;
-			}
 		}
 
 		p {
-			padding: 0 0.5em;
+			padding: $padding-lr__half;
 		}
-	}
+	} // end medium media query
 }
 
 

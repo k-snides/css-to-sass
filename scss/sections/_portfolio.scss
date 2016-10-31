@@ -1,6 +1,6 @@
-/* --- PORTFOLIO Section --- */
+// PORTFOLIO Section
 .portfolio {
-	background-color: #fff;
+	background-color: $color-background__portfolio;
 	padding-bottom: 3em;
 	div {
 		@extend %flexbox;
@@ -10,6 +10,7 @@
 		margin: 1em 0 3em 0; 
 	}
 
+	// start medium media query
 	@include mq('medium') {
 		padding: 1em 0 1em 0;
 		
@@ -19,45 +20,26 @@
 		}
 
 		.portfolio-image {
-			-ms-flex: 1 0 40%;
-			    flex: 1 0 40%;
-			margin: 0.5em;
+			@include section-image-medium;
 		}
 
 		p {
-			margin: 1em 0 3em 0;
-			padding: 0 1em;
+			@include section-padding-medium;
 		}
-	}
+	} // end medium media query
 
-	// large media query
+	// start large media query
 	@include mq('large') {
 		margin: 0 2em;
 		
 		.portfolio-image {
-			-ms-flex: 1 0 30%;
-			    flex: 1 0 30%;
-			margin: 0 0.5em 1em 0.5em;
-			
-			transition: transform .3s ease-in,
-									box-shadow .3s ease-in;
-									
-			&:nth-child(3n + 1) {
-				margin-left: -1.5em;
-			}
-			&:nth-child(3n + 3) {
-				margin-right: -1.5em;
-			}
-			&:hover {
-				transform: scale(1.05) translate(-1%, -1%);
-				box-shadow: 0 12px 12px -6px black;
-			}
+			@include section-image-large;
 		}
 
 		p {
-			padding: 0 0.5em;
+			padding: $padding-lr__half;
 		}
-	}
+	} // end large media query
 
 }
 

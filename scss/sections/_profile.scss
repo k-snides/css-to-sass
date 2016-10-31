@@ -1,4 +1,4 @@
-/* --- PROFILE Section --- */
+// PROFILE Section
 .profile {
 	padding-bottom: 3em;
 	
@@ -34,7 +34,7 @@
 			-ms-flex-order: 1;
 			    order: 1;
 			text-align: left;
-			font-size: 1.250em;
+			font-size: $font-size__large;
 			padding: 0 1em 0 0.5em;
 		}
 

@@ -1,4 +1,4 @@
-/* --- Flexbox --- */
+// Flexbox
 %flexbox {
 	display: -ms-flexbox;
 	display: flex;
@@ -10,14 +10,29 @@
 }
 
 %flexbox-row {
-	@include flexbox-row;
+	// @include flexbox-row;
+	// @mixin needed for use in media queries
 }
 
 %flexbox-space-around {
-	@include flexbox-space-around;
+	// @include flexbox-space-around;
+	// @mixin needed for use in media queries
 }
 
-// Hide Elements
-%hide-element {
-	display: none;
+// Text
+%center {
+	text-align: center;
+}
+
+%white-text {
+	color: $color-text__base;
+}
+
+%uppercase {
+	text-transform: uppercase;
+}
+
+// Margin
+%margin-right-auto {
+	margin-right: auto;
 }

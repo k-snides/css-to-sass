@@ -1,27 +1,27 @@
-/* ----- FOOTER ----- */
+// FOOTER
 footer {
 	border-top: 1px solid lightgray;
-	margin: 0 auto;
+	margin: $center-margin;
 	width: 90%;
 	div {
 		@extend %flexbox;
-		-ms-flex-item-align: center;
-		align-self: center;
-		font-size: 0.8em;
+		@include flexbox-align-self;
+		font-size: $font-size__x-small;
 	}
 	h4 {
+		@extend %margin-right-auto;
 		padding: 2em 0;
-		margin-right: auto;
-		font-size: 1em;
+		font-size: $font-size__default;
 	}
 	.footer-nav {
-		@extend %hide-element;
+		display: none;
 	}
 
 	.footer-logo {
-		margin-right: auto;
+		@extend %margin-right-auto;
 	}
 
+	// start medium media query
 	@include mq('medium') {
 		.desktop-hide {
 			display: none;
@@ -35,27 +35,18 @@ footer {
 				@include flexbox-space-around;
 				margin: 1.5em 0;
 				li {
+					@include flexbox-align-self;
 					list-style-type: none;
 					background-color: inherit;
-					margin: 0 0 0.5em 1em; 
-					// padding: 1em 0;
-					text-align: center;
-					font-size: 0.9em;
-					-ms-flex-item-align: center;
-					    align-self: center;
+					margin: 0 0 0.5em 1em;
+					text-align: $center-text;
+					font-size: $font-size__small;
 				}
 			}
 		}
 
 		h4 {
-			font-size: 1.250em;
+			font-size: $font-size__large;
 		}
-	}// <-- end medium mq
+	} // end medium media query
 }
-
-
-
-
-// .mobile-hide {
-// 	display: none;
-// }
