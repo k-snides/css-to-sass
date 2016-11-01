@@ -1,23 +1,23 @@
 // CONTACT Section
 .contact {
+	@include set-padding(1em, 0, 4em, 0);
 	background-color: $color-background__contact;
-	padding: 1em 0 4em 0;
 	p {
-		margin-bottom: 1em;
+		@include set-margin(1em, 1em, 1em, 1em);
 		span {
+			@include set-padding(0, 0, 0, 10px);
 			font-weight: bold;
-			padding-left: 10px;
 		}
 	}
 
 	// start medium media query
 	@include mq('medium') {
-		padding: 0 4.5em 4em 4.5em;
+		@include set-padding(0, 4.5em, 4em, 4.5em);
 		
 		p {
 			font-size: $font-size__large;
 			&:nth-child(3) {
-				margin-top: 3em;
+				@include set-margin(3em, 0, 0, 0);
 			}
 		}
 	} // end medium media query

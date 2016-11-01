@@ -1,7 +1,7 @@
 // BASE Styles
 * {
-	margin: 0;
-	padding: 0;
+	@include set-margin(0, 0, 0, 0);
+	@include set-padding(0, 0, 0, 0);
 	box-sizing: border-box;
 }
 
@@ -11,21 +11,21 @@ body {
 }
 
 h1 {
-	padding: 0.5em 0 1em;
+	@include set-padding(0.5em, 0, 1em, 0);
 	font-size: $font-size__x-large;
 }
 
 h2 {
 	@extend %center;
 	@extend %uppercase;
-	padding: 2.5em 0;
+	@include set-padding(2.5em, 0, 2.5em, 0);
 	font-size: $font-size__medium;
 }
 
 h3 {
 	@extend %center;
+	@include set-margin(1em, auto, 1em, auto);
 	font-size: $font-size__large;
-	margin: 1em auto;
 	color: $color-text__h3;
 }
 

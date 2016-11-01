@@ -2,7 +2,7 @@
 .main-header {
 	@extend %flexbox;
 	@extend %flexbox-column;
-	padding: 1em 0;
+	@include set-padding(1em, 0, 1em, 0);
 	
 	.header-logo {
 		@include flexbox-align-self;
@@ -11,10 +11,10 @@
 
 	@include mq('large') {
 		@include flexbox-row;
-		margin: 1.5em 0;
+		@include set-margin(1.5em, 0, 1.5em, 0);
 		
 		.header-logo {
-			margin-right: auto;
+			@include set-margin(0, auto, 0, 0);
 		}
 	}
 }
@@ -29,10 +29,10 @@
 		
 		li {
 			@extend %center;
+			@include set-margin(0, 0, 0.5em, 0);
+			@include set-padding(1em, 0, 1em, 0);
 			list-style-type: none;
 			background-color: $color-background__li;
-			margin-bottom: 0.5em;
-			padding: 1em 0;
 		}
 		
 		// medium media query
@@ -47,7 +47,7 @@
 		
 		@include mq('large') {
 			li {
-				margin: 0.5em 0 0 2em;
+				@include set-margin(0.5em, 0, 0, 2em);
 			}
 		}
 	}

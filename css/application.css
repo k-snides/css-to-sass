@@ -19,8 +19,14 @@ footer h4, footer .footer-logo {
   margin-right: auto; }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
   box-sizing: border-box; }
 
 body {
@@ -28,16 +34,25 @@ body {
   background-color: #f5f5f5; }
 
 h1 {
-  padding: 0.5em 0 1em;
+  padding-top: 0.5em;
+  padding-right: 0;
+  padding-bottom: 1em;
+  padding-left: 0;
   font-size: 1.5em; }
 
 h2 {
-  padding: 2.5em 0;
+  padding-top: 2.5em;
+  padding-right: 0;
+  padding-bottom: 2.5em;
+  padding-left: 0;
   font-size: 1.1em; }
 
 h3 {
+  margin-top: 1em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
   font-size: 1.25em;
-  margin: 1em auto;
   color: #808080; }
 
 p {
@@ -56,7 +71,10 @@ img {
   max-width: 100%; }
 
 .main-header {
-  padding: 1em 0; }
+  padding-top: 1em;
+  padding-right: 0;
+  padding-bottom: 1em;
+  padding-left: 0; }
   .main-header .header-logo {
     -ms-flex-item-align: center;
     align-self: center;
@@ -65,15 +83,27 @@ img {
     .main-header {
       -ms-flex-direction: row;
       flex-direction: row;
-      margin: 1.5em 0; }
+      margin-top: 1.5em;
+      margin-right: 0;
+      margin-bottom: 1.5em;
+      margin-left: 0; }
       .main-header .header-logo {
-        margin-right: auto; } }
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: 0; } }
 
 .main-nav .nav li {
-  list-style-type: none;
-  background-color: #fff;
+  margin-top: 0;
+  margin-right: 0;
   margin-bottom: 0.5em;
-  padding: 1em 0; }
+  margin-left: 0;
+  padding-top: 1em;
+  padding-right: 0;
+  padding-bottom: 1em;
+  padding-left: 0;
+  list-style-type: none;
+  background-color: #fff; }
 @media (min-width: 768px) {
   .main-nav .nav {
     -ms-flex-direction: row;
@@ -84,7 +114,10 @@ img {
       background-color: inherit; } }
 @media (min-width: 1024px) {
   .main-nav .nav li {
-    margin: 0.5em 0 0 2em; } }
+    margin-top: 0.5em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 2em; } }
 
 .wrapper {
   width: 90%;
@@ -102,7 +135,10 @@ footer {
     align-self: center;
     font-size: 0.8em; }
   footer h4 {
-    padding: 2em 0;
+    padding-top: 2em;
+    padding-right: 0;
+    padding-bottom: 2em;
+    padding-left: 0;
     font-size: 1em; }
   footer .footer-nav {
     display: none; }
@@ -119,13 +155,19 @@ footer {
         flex-direction: row;
         -ms-flex-pack: distribute;
         justify-content: space-around;
-        margin: 1.5em 0; }
+        margin-top: 1.5em;
+        margin-right: 0;
+        margin-bottom: 1.5em;
+        margin-left: 0; }
         footer .footer-nav .nav li {
           -ms-flex-item-align: center;
           align-self: center;
+          margin-top: 0;
+          margin-right: 0;
+          margin-bottom: 0.5em;
+          margin-left: 1em;
           list-style-type: none;
           background-color: inherit;
-          margin: 0 0 0.5em 1em;
           text-align: center;
           font-size: 0.9em; }
     footer h4 {
@@ -170,13 +212,22 @@ footer {
     padding: 0 1.8em 0 0; } }
 
 .portfolio {
-  background-color: #fff;
-  padding-bottom: 3em; }
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 3em;
+  padding-left: 0;
+  background-color: #fff; }
   .portfolio p {
-    margin: 1em 0 3em 0; }
+    margin-top: 1em;
+    margin-right: 0;
+    margin-bottom: 3em;
+    margin-left: 0; }
   @media (min-width: 768px) {
     .portfolio {
-      padding: 1em 0 1em 0; }
+      padding-top: 1em;
+      padding-right: 0;
+      padding-bottom: 1em;
+      padding-left: 0; }
       .portfolio div {
         -ms-flex-direction: row;
         flex-direction: row;
@@ -187,11 +238,20 @@ footer {
         flex: 1 0 40%;
         margin: 0.5em; }
       .portfolio p {
-        margin: 1em 0 3em 0;
-        padding: 0 1em; } }
+        margin-top: 1em;
+        margin-right: 0;
+        margin-bottom: 3em;
+        margin-left: 0;
+        padding-top: 0;
+        padding-right: 1em;
+        padding-bottom: 0;
+        padding-left: 1em; } }
   @media (min-width: 1024px) {
     .portfolio {
-      margin: 0 2em; }
+      margin-top: 0;
+      margin-right: 2em;
+      margin-bottom: 0;
+      margin-left: 2em; }
       .portfolio .portfolio-image {
         -ms-flex: 1 0 30%;
         flex: 1 0 30%;
@@ -205,16 +265,28 @@ footer {
           transform: scale(1.05) translate(-1%, -1%);
           box-shadow: 0 12px 12px -6px black; }
       .portfolio p {
-        padding: 0 0.5em; } }
+        padding-top: 0;
+        padding-right: 0.5em;
+        padding-bottom: 0;
+        padding-left: 0.5em; } }
 
 .skills {
-  background-color: #4285f4;
-  padding: 1em 0 3em 0; }
+  padding-top: 1em;
+  padding-right: 0;
+  padding-bottom: 3em;
+  padding-left: 0;
+  background-color: #4285f4; }
   .skills p {
-    margin: 1em 0 3em 0; }
+    margin-top: 1em;
+    margin-right: 0;
+    margin-bottom: 3em;
+    margin-left: 0; }
   @media (min-width: 768px) {
     .skills {
-      padding: 1em 0 2em 0; }
+      padding-top: 1em;
+      padding-right: 0;
+      padding-bottom: 2em;
+      padding-left: 0; }
       .skills div {
         -ms-flex-direction: row;
         flex-direction: row;
@@ -225,15 +297,27 @@ footer {
         flex: 1 0 40%;
         margin: 0.5em; }
         .skills .skills-image:last-child {
+          margin-top: 0;
+          margin-right: 0.5em;
+          margin-bottom: 0;
+          margin-left: 0.5em;
           -ms-flex: 0 1 48%;
-          flex: 0 1 48%;
-          margin: 0 0.5em 0 0.5em; }
+          flex: 0 1 48%; }
       .skills p {
-        margin: 1em 0 3em 0;
-        padding: 0 1em; } }
+        margin-top: 1em;
+        margin-right: 0;
+        margin-bottom: 3em;
+        margin-left: 0;
+        padding-top: 0;
+        padding-right: 1em;
+        padding-bottom: 0;
+        padding-left: 1em; } }
   @media (min-width: 1024px) {
     .skills {
-      margin: 0 2em; }
+      margin-top: 0;
+      margin-right: 2em;
+      margin-bottom: 0;
+      margin-left: 2em; }
       .skills .skills-image {
         -ms-flex: 1 0 30%;
         flex: 1 0 30%;
@@ -248,25 +332,42 @@ footer {
           box-shadow: 0 12px 12px -6px black; }
         .skills .skills-image:last-child {
           -ms-flex: 1 0 30%;
-          flex: 1 0 30%;
-          margin-top: 0.5em; }
+          flex: 1 0 30%; }
       .skills p {
-        padding: 0 0.5em; } }
+        padding-top: 0;
+        padding-right: 0.5em;
+        padding-bottom: 0;
+        padding-left: 0.5em; } }
 
 .contact {
-  background-color: #f0f0f0;
-  padding: 1em 0 4em 0; }
+  padding-top: 1em;
+  padding-right: 0;
+  padding-bottom: 4em;
+  padding-left: 0;
+  background-color: #f0f0f0; }
   .contact p {
-    margin-bottom: 1em; }
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em; }
     .contact p span {
-      font-weight: bold;
-      padding-left: 10px; }
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 10px;
+      font-weight: bold; }
   @media (min-width: 768px) {
     .contact {
-      padding: 0 4.5em 4em 4.5em; }
+      padding-top: 0;
+      padding-right: 4.5em;
+      padding-bottom: 4em;
+      padding-left: 4.5em; }
       .contact p {
         font-size: 1.25em; }
         .contact p:nth-child(3) {
-          margin-top: 3em; } }
+          margin-top: 3em;
+          margin-right: 0;
+          margin-bottom: 0;
+          margin-left: 0; } }
 
 /*# sourceMappingURL=application.css.map */

@@ -72,11 +72,40 @@
 	}
 }
 
-// Section Padding
-@mixin section-padding-medium {
-	margin: 1em 0 3em 0;
-	padding: 0 1em;
+
+// Padding Mixin
+@mixin set-padding(
+	$p-top: null,
+	$p-right: null,
+	$p-bottom: null,
+	$p-left: null) {
+		padding-top: $p-top;
+		padding-right: $p-right;
+		padding-bottom: $p-bottom;
+		padding-left: $p-left;    
 }
+
+// Margin Mixin
+@mixin set-margin(
+	$m-top: null,
+	$m-right: null,
+	$m-bottom: null,
+	$m-left: null) {
+		margin-top: $m-top;
+		margin-right: $m-right;
+		margin-bottom: $m-bottom;
+		margin-left: $m-left;    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

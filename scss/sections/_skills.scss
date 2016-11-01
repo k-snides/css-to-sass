@@ -1,7 +1,7 @@
 // SKILLS Section
 .skills {
+	@include set-padding(1em, 0, 3em, 0);
 	background-color: $color-background__skills;
-	padding: 1em 0 3em 0;
 	div {
 		@extend %flexbox;
 		@extend %flexbox-column;
@@ -14,12 +14,12 @@
 	}
 	p {
 		@extend %white-text;
-		margin: 1em 0 3em 0; 
+		@include set-margin(1em, 0, 3em, 0);
 	}
 
 	// start medium media query
 	@include mq('medium') {
-		padding: 1em 0 2em 0;
+		@include set-padding(1em, 0, 2em, 0);
 		
 		div {
 			@include flexbox-row;
@@ -29,32 +29,33 @@
 		.skills-image {
 			@include section-image-medium;
 			&:last-child {
+				@include set-margin(0, 0.5em, 0, 0.5em);
 				-ms-flex: 0 1 48%;
 				    flex: 0 1 48%;
-				margin: 0 0.5em 0 0.5em;
 			}
 		}
 
 		p {
-			@include section-padding-medium;
+			@include set-margin(1em, 0, 3em, 0);
+			@include set-padding(0, 1em, 0, 1em);
 		}
 	} // end medium media query
 	
 	// start large media query
 	@include mq('large') {
-		margin: 0 2em;
+		@include set-margin(0, 2em, 0, 2em);
 		
 		.skills-image {
 			@include section-image-large;
-			&:last-child {
-				-ms-flex: 1 0 30%;
-				    flex: 1 0 30%;
-				margin-top: 0.5em;
-			}
+				&:last-child {
+					// @include set-margin(0.5em, 0, 0, 0);
+					-ms-flex: 1 0 30%;
+					    flex: 1 0 30%;
+				}
 		}
 
 		p {
-			padding: $padding-lr__half;
+			@include set-padding(0, 0.5em, 0, 0.5em);
 		}
 	} // end medium media query
 }

@@ -10,7 +10,7 @@ footer {
 	}
 	h4 {
 		@extend %margin-right-auto;
-		padding: 2em 0;
+		@include set-padding(2em, 0, 2em, 0);
 		font-size: $font-size__default;
 	}
 	.footer-nav {
@@ -33,12 +33,12 @@ footer {
 				@include display-flexbox;
 				@include flexbox-row;
 				@include flexbox-space-around;
-				margin: 1.5em 0;
+				@include set-margin(1.5em, 0, 1.5em, 0);
 				li {
 					@include flexbox-align-self;
+					@include set-margin(0, 0, 0.5em, 1em);
 					list-style-type: none;
 					background-color: inherit;
-					margin: 0 0 0.5em 1em;
 					text-align: $center-text;
 					font-size: $font-size__small;
 				}
