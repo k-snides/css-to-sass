@@ -23,10 +23,15 @@
 
 // NAVIGATION
 .main-nav {
+	display: $display-hide;
+	
+	@include mq('medium') {
+		display: $display-show !important;
+	}
+	
 	.nav {
 		@extend %flexbox;
 		@extend %flexbox-column;
-		
 		li {
 			@extend %center;
 			@include set-margin(0, 0, 0.5em, 0);
@@ -39,7 +44,6 @@
 		@include mq('medium') {
 			@include flexbox-row;
 			@include flexbox-space-around;
-			
 			li {
 				background-color: inherit;
 			}

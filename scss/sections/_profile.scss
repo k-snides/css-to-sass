@@ -1,23 +1,23 @@
 // PROFILE Section
 .profile {
-	padding-bottom: 3em;
+	@include set-padding(0, 0, 3em, 0);
 	
 	@include mq('medium') {
-		margin-top: 1em;
+		@include set-margin(1em, 0, 0, 0);
 	}
 }
 
 .profile-image {
-	padding: 1.5em 2em;
-	margin: 0 auto;
-	display: block;
+	@include set-padding(1.5em, 2em, 1.5em, 2em);
+	margin: $center-margin;
+	display: $display-show;
 	
 	@include mq('medium') {
-		padding: 0;
+		@include set-padding(0, 0, 0, 0);
 	}
 
 	@include mq('large') {
-		margin: 0 0 0 auto;
+		@include set-margin(0, 0, 0, auto);
 	}
 }
 
@@ -29,13 +29,13 @@
 		@include flexbox-row;
 		
 		p {
+			@include set-padding(0, 1em, 0, 0.5em);
 			-ms-flex: 1 0 60%;
 			    flex: 1 0 60%;
 			-ms-flex-order: 1;
 			    order: 1;
 			text-align: left;
 			font-size: $font-size__large;
-			padding: 0 1em 0 0.5em;
 		}
 
 		figure {
@@ -48,7 +48,7 @@
 
 	@include mq('large') {
 		p {
-			padding: 0 1.8em 0 0;
+			@include set-padding(0, 1.8em, 0, 0);
 		}
 	}
 }

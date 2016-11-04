@@ -19,6 +19,16 @@
 	// @mixin needed for use in media queries
 }
 
+// Icon
+%bar-icon {
+	@include set-margin(6px, 0, 6px, 0);
+	width: 35px;
+	height: 5px;
+	background-color: $black;
+	
+	transition: 0.4s;
+}
+
 // Text
 %center {
 	text-align: center;

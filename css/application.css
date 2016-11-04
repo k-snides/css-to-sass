@@ -6,6 +6,16 @@
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.bar1, .bar2, .bar3 {
+  margin-top: 6px;
+  margin-right: 0;
+  margin-bottom: 6px;
+  margin-left: 0;
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  transition: 0.4s; }
+
 h2, h3, p, .main-nav .nav li {
   text-align: center; }
 
@@ -70,6 +80,21 @@ a {
 img {
   max-width: 100%; }
 
+.icon {
+  margin: 0 auto; }
+  .icon span {
+    display: block; }
+  @media (min-width: 768px) {
+    .icon {
+      display: none !important; } }
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-10px, -6px); }
+.change .bar2 {
+  transform: rotate(-90deg); }
+.change .bar3 {
+  transform: rotate(-315deg) translate(-6px, -21px); }
+
 .main-header {
   padding-top: 1em;
   padding-right: 0;
@@ -93,31 +118,36 @@ img {
         margin-bottom: 0;
         margin-left: 0; } }
 
-.main-nav .nav li {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0.5em;
-  margin-left: 0;
-  padding-top: 1em;
-  padding-right: 0;
-  padding-bottom: 1em;
-  padding-left: 0;
-  list-style-type: none;
-  background-color: #fff; }
-@media (min-width: 768px) {
-  .main-nav .nav {
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-    .main-nav .nav li {
-      background-color: inherit; } }
-@media (min-width: 1024px) {
+.main-nav {
+  display: none; }
+  @media (min-width: 768px) {
+    .main-nav {
+      display: block !important; } }
   .main-nav .nav li {
-    margin-top: 0.5em;
+    margin-top: 0;
     margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 2em; } }
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    padding-top: 1em;
+    padding-right: 0;
+    padding-bottom: 1em;
+    padding-left: 0;
+    list-style-type: none;
+    background-color: #fff; }
+  @media (min-width: 768px) {
+    .main-nav .nav {
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .main-nav .nav li {
+        background-color: inherit; } }
+  @media (min-width: 1024px) {
+    .main-nav .nav li {
+      margin-top: 0.5em;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 2em; } }
 
 .wrapper {
   width: 90%;
@@ -127,7 +157,7 @@ img {
       max-width: 1024px; } }
 
 footer {
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #808080;
   margin: 0 auto;
   width: 90%; }
   footer div {
@@ -174,34 +204,52 @@ footer {
       font-size: 1.25em; } }
 
 .profile {
-  padding-bottom: 3em; }
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 3em;
+  padding-left: 0; }
   @media (min-width: 768px) {
     .profile {
-      margin-top: 1em; } }
+      margin-top: 1em;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0; } }
 
 .profile-image {
-  padding: 1.5em 2em;
+  padding-top: 1.5em;
+  padding-right: 2em;
+  padding-bottom: 1.5em;
+  padding-left: 2em;
   margin: 0 auto;
   display: block; }
   @media (min-width: 768px) {
     .profile-image {
-      padding: 0; } }
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0; } }
   @media (min-width: 1024px) {
     .profile-image {
-      margin: 0 0 0 auto; } }
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: auto; } }
 
 @media (min-width: 768px) {
   .profile-content {
     -ms-flex-direction: row;
     flex-direction: row; }
     .profile-content p {
+      padding-top: 0;
+      padding-right: 1em;
+      padding-bottom: 0;
+      padding-left: 0.5em;
       -ms-flex: 1 0 60%;
       flex: 1 0 60%;
       -ms-flex-order: 1;
       order: 1;
       text-align: left;
-      font-size: 1.25em;
-      padding: 0 1em 0 0.5em; }
+      font-size: 1.25em; }
     .profile-content figure {
       -ms-flex: 1 0 40%;
       flex: 1 0 40%;
@@ -209,7 +257,10 @@ footer {
       order: 2; } }
 @media (min-width: 1024px) {
   .profile-content p {
-    padding: 0 1.8em 0 0; } }
+    padding-top: 0;
+    padding-right: 1.8em;
+    padding-bottom: 0;
+    padding-left: 0; } }
 
 .portfolio {
   padding-top: 0;

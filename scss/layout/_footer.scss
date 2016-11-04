@@ -1,6 +1,6 @@
 // FOOTER
 footer {
-	border-top: 1px solid lightgray;
+	border-top: 1px solid $gray;
 	margin: $center-margin;
 	width: 90%;
 	div {
@@ -14,7 +14,7 @@ footer {
 		font-size: $font-size__default;
 	}
 	.footer-nav {
-		display: none;
+		display: $display-hide;
 	}
 
 	.footer-logo {
@@ -24,7 +24,7 @@ footer {
 	// start medium media query
 	@include mq('medium') {
 		.desktop-hide {
-			display: none;
+			display: $display-hide;
 		}
 
 		.footer-nav {

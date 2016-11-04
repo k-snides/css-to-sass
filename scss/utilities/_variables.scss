@@ -3,11 +3,12 @@ $breakpoint-medium   : 768px;
 $breakpoint-large    : 1024px;
 
 // Centering
-$center-margin       : 0 auto;
-$center-text         : center;
+$center-margin   : 0 auto;
+$center-text     : center;
 
-// Padding
-$padding-lr__half    : 0 0.5em;
+// Hide / Show
+$display-hide    : none;
+$display-show    : block;
 
 // Colors
 $white           : #fff;
